@@ -1,2 +1,2 @@
 # Makefiles used by all subprojects
-include $(sort $(wildcard packages/*/*.mk))
+include $(sort $(wildcard ../packages/*/*.mk))
