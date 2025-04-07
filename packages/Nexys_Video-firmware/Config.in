@@ -1,0 +1,16 @@
+config BR2_PACKAGE_NEXYS_VIDEO_FIRMWARE
+	bool "Nexys Video firmware"
+	help
+	  Nexys Video FPGA firmware
+
+if BR2_PACKAGE_NEXYS_VIDEO_FIRMWARE
+
+config BR2_PACKAGE_NEXYS_VIDEO_FIRMWARE_XILINX_SETTINGS
+	string "Xilinx settigs??.sh file"
+	default "/opt/Xilinx/Vivado/2016.2/settings64.sh"
+
+config BR2_PACKAGE_NEXYS_VIDEO_FIRMWARE_BOOTLOADER_NAME
+	string "Bootloader name"
+	default "bb.elf"
+
+endif
